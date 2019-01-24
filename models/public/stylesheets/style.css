@@ -12,10 +12,9 @@ a:hover {
 .jumbotron {
   margin-top: -1em;
   background: url("/images/bg.jpg") no-repeat left center;
-  min-height: 30em;
+  min-height: 20em;
   color: #fff;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-  background-size: cover; }
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); }
 
 .form-actions {
   padding: 19px 20px 20px;
@@ -38,7 +37,7 @@ a:hover {
   color: #011a72; }
 
 .header > .navbar {
-  background-color: #000000 !important; }
+  background-color: #011a72 !important; }
 
 .search-input-group {
   margin: 1em 0;
