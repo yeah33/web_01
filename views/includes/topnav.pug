@@ -1,39 +1,36 @@
 .header.clearfix
   nav.navbar.navbar-expand-md.navbar-dark.bg-dark.fixed-top
     .container
-      a.navbar-brand(href="/") NONAME
+      a.navbar-brand(href="/") NONAME  
       button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarsExampleDefault", aria-controls="navbarsExampleDefault", aria-expanded="false", aria-label="Toggle navigation")
         span.navbar-toggler-icon
 
       #navbarsExampleDefault.collapse.navbar-collapse
-        ul.navbar-nav.ml-auto       
-          li.nav-item
-           a.nav-link(href="/questions") Questions
+       
               
           if (!currentUser) 
-           li.nav.nav-pills
-             li.dropdown(role='presentation')
-               a.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-expanded='false')
-                 | Users
-                 span.caret
-               ul.dropdown-menu(role='menu')
-                   li
-                     a(href="/signin") Signin
-                   li
-                     a(href="/users/new") Signup
- 
+           ul.navbar-nav.ml-auto       
+              .btn-group(role='group', aria-label='...')
+                  li.nav-item
+                    a.nav-link(href="/questions") Questions
+                  li.nav-itm
+                    a.nav-link(href="/signin") Signin
+                  li.nav-itm
+                    a.nav-link(href="/users/new") Signup
           else   
-           ul.nav.nav-pills
-              li.dropdown(role='presentation')
-                a.dropdown-toggle(data-toggle='dropdown', href='#', role='button', aria-expanded='false')
-                  | ${currentUser._id} "님 환영합니다."
-                  span.caret
-                ul.dropdown-menu(role='menu')
-                    li
-                      a(href="/users/${currentUser._id}") My Profile
-                    li
-                      a(href="/signout") Signout
-                    
-              
+           ul.navbar-nav.ml-auto       
+              .btn-group(role='group', aria-label='...')
+                  li.nav-item
+                    a.nav-link(href="/questions") Questions
+                  .btn-group(role='group')
+                    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                      | ${currentUser._id} "님 환영합니다."
+                      span.caret
+                    ul.dropdown-menu(role='menu')
+                        li
+                          a(href="/users/${currentUser._id}") My Page
+                        li
+                          a(href="/signout") Signout
+                        
 
-    
+                      

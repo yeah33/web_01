@@ -38,7 +38,7 @@ a:hover {
   color: #011a72; }
 
 .header > .navbar {
-  background-color: #000000 !important; }
+  background-color: #00a000 !important; }
 
 .search-input-group {
   margin: 1em 0;
@@ -71,13 +71,17 @@ a:hover {
   .form-signin input[type="email"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0; }
+    border-bottom-left-radius: 0;
+    border-color: #00a000; }
   .form-signin input[type="password"] {
     margin-bottom: 10px;
     border-top-left-radius: 0;
-    border-top-right-radius: 0; }
+    border-top-right-radius: 0;
+    border-color: #00a000; }
   .form-signin .sub {
     margin: 1em 0; }
+    .form-signin .sub .a:link {
+      color: #00a000; }
 
 .main-title .small {
   float: right;
