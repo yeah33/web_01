@@ -1,0 +1,62 @@
+﻿.secondnav
+                       #nav.navbar.navbar-expand-lg.navbar-light.bg-light
+                                a.navbar-brand(href='#') 
+                                |   
+                                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarColor03', aria-controls='navbarColor03', aria-expanded='false', aria-label='Toggle navigation')
+                                    span.navbar-toggler-icon
+                                |   
+                                #navbarColor03.collapse.navbar-collapse 
+                                    .btn-group(role='group')
+                                        button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                                          | 해외패키지
+                                          span.caret
+                                            ul.dropdown-menu(role='menu')
+                                                li
+                                                  a(href="/users/${currentUser._id}") My Page
+                                                li
+                                                  a(href="/signout") Signout
+                                                  
+                                        button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                                          | 자유여행
+                                          span.caret
+                                            ul.dropdown-menu(role='menu')
+                                                li
+                                                  a(href="/users/${currentUser._id}") My Page
+                                                li
+                                                  a(href="/signout") Signout     
+                                                  
+                                        button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                                          | 국내여행
+                                          span.caret
+                                            ul.dropdown-menu(role='menu')
+                                                li
+                                                  a(href="/users/${currentUser._id}") My Page
+                                                li
+                                                  a(href="/signout") Signout  
+                                        button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                                                      | 테마여행
+                                                      span.caret
+                                                        ul.dropdown-menu(role='menu')
+                                                            li
+                                                              a(href="/users/${currentUser._id}") My Page
+                                                            li
+                                                              a(href="/signout") Signout 
+                                        button.btn.btn-success.dropdown-toggle(type='button', data-toggle='dropdown', aria-expanded='false')
+                                                      | 부산/지방출발
+                                                      span.caret
+                                                        ul.dropdown-menu(role='menu')
+                                                            li
+                                                              a(href="/users/${currentUser._id}") My Page
+                                                            li
+                                                              a(href="/signout") Signout                       
+                                                                                                                                                 
+                                                                                                                             
+                                                               
+                                     
+                                    form.form-inline.my-2.my-lg-0.ml-auto
+                                        input.form-control.mr-sm-2(type='text', placeholder='Search')
+                                        |       
+                                        button.btn.btn-success.my-2.my-sm-0(type='submit') Search
+                                        
+                                        
+                                        

@@ -67,4 +67,16 @@ a:hover {
     position: absolute;
   }
 
-} 
+}
+
+.my-2 {
+    position: relative;
+
+    input {
+        text-align:right;
+        border-color: #00a000;
+        border-radius: 2em;
+        padding-left: 2.5em;
+    }
+}
+

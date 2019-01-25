@@ -55,6 +55,14 @@ a:hover {
     color: #bababa;
     position: absolute; }
 
+.my-2 {
+  position: relative; }
+  .my-2 input {
+    text-align: right;
+    border-color: #00a000;
+    border-radius: 2em;
+    padding-left: 2.5em; }
+
 .form-signin {
   width: 300px;
   margin: 0 auto;
