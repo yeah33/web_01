@@ -14,8 +14,10 @@ html
       include ./includes/topnav
     block second-nav
       include ./includes/secondnav
-    br
-    br
+    <br>
+    <br>
+    block foreign_pack
+       include ./includes/package
     block hero-unit
     if flashMessages
       each texts, type in flashMessages
